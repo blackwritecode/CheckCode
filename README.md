@@ -1,0 +1,4 @@
+# CheckCode
+init
+
+CheckCode Demo.
