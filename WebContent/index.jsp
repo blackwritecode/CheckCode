@@ -7,10 +7,10 @@
 <title>checkcode</title>
 </head>
 <body>
-<form action="/CheckCode/servlet/LoginServlet" method="get">
+<form action="/CheckCode/servlet/LoginServlet" method="post">
 验证码：<input type="text" name="checkcode" /><img alt="验证码" src="/CheckCode/servlet/ImageServlet" id="imageCode">
 <a href="javascript:reloadCode();">看不清楚</a><br>
-<input type="submit" name="提交" value="提交">
+<input type="submit" name="" value="提交">
 </form>
 
 

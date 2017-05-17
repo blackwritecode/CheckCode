@@ -30,7 +30,7 @@ public class ImageServlet extends HttpServlet{
 		g.setColor(c);
 		g.fillRect(0, 0, 68, 22);
 		
-		char[] ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".toCharArray(); 
+		char[] ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789空巢里的鸟".toCharArray(); 
 		Random r = new Random();
 		int len = ch.length;
 		int index;
@@ -51,5 +51,9 @@ public class ImageServlet extends HttpServlet{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	@Override
+	public void doPost(HttpServletRequest request,HttpServletResponse response){
+		doGet(request,response);
 	}
 }

@@ -34,4 +34,8 @@ public class LoginServlet extends HttpServlet {
 		out.flush();
 		out.close();
 	}
+	
+	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		doGet(request,response);
+	}
 }
