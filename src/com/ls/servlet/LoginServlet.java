@@ -3,7 +3,6 @@ package com.ls.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -12,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author ls
  * @date 2017年5月9日
  */
-public class LoginServlet extends HttpServlet {
+public class LoginServlet extends BaseServlet {
 
 	/**
 	 * 
@@ -20,7 +19,7 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = -7543385137577080694L;
 
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{
-		
+		log.info("提交");
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		String piccode = (String)request.getSession().getAttribute("piccode");

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author ls
  * @date 2017年5月9日
  */
-public class ImageServlet extends HttpServlet{
+public class ImageServlet extends BaseServlet{
 
 	/**
 	 * 
