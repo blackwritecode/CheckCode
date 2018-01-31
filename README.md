@@ -1,4 +1,3 @@
 # CheckCode
-init
 
 CheckCode Demo.
